@@ -1,3 +1,5 @@
+# Task 1
+
 # Shuffle Numbers Bash Script
 
 This Bash script shuffles an array of numbers from 1 to 10 and outputs them in a random order.
@@ -36,3 +38,20 @@ The script employs a Fisher-Yates shuffling algorithm to randomize the order of 
 ## Known Limitations / Bugs
 - Uses the RANDOM variable, which generates pseudorandom numbers and may not be suitable for cryptographic applications or high-security randomization.
 - In rare cases, the script might take longer to execute if the shuffling algorithm encounters repeated random selections. However, for small arrays like 1 to 10, this is highly unlikely.
+
+
+# Task 2
+-  Request Rate,
+-  Request Latency
+-  Error Count
+are the most beneficial metrics , find to monitor on the web server side. Additionally, tracking the following metrics would be interesting to gauge the server's capacity and measure the load accurately:
+
+- CPU Utilization
+- Memory Usage
+- Memory Utilization
+- Memory Fragmentation
+- Network Usage
+- Packet Losses
+- Disk I/O  
+To collect both metric groups, I can use a tool like Prometheus + Grafana or Zabbix. The metrics we will be tracking here are quite general, so I don't anticipate facing any difficulties. However, if I consider not finding a ready-made template or node exporter, and if I have to write them myself, fetching the metrics correctly could be challenging and time-consuming
+
